@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="table" layoutY="90.0" prefHeight="500.0" prefWidth="810.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="414.0" text="Tên" />
+          <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="395.0" text="Tuổi" />
+        </columns>
+      </TableView>
+      <MenuButton layoutX="348.0" layoutY="14.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="115.0" text="Đặt Ngay">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#addPhoThong" text="Phổ thông" />
+          <MenuItem mnemonicParsing="false" onAction="#addSinhVienLoai1" text="Sinh viên loại 1" />
+            <MenuItem mnemonicParsing="false" onAction="#addSinhVienLoai2" text="Sinh viên loại 2" />
+            <MenuItem mnemonicParsing="false" onAction="#addCap3" text="Cấp 3" />
+        </items>
+      </MenuButton>
+      <Button layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#printf" prefHeight="53.0" prefWidth="102.0" text="Cập nhật" />
+      <Button layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#clearTableView" prefHeight="53.0" prefWidth="102.0" text="Dọn dẹp" />
+   </children>
+</AnchorPane>
