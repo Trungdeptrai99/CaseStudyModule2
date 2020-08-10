@@ -11,19 +11,27 @@
    <children>
       <TableView fx:id="table" layoutY="90.0" prefHeight="500.0" prefWidth="810.0">
         <columns>
-          <TableColumn fx:id="nameColumn" prefWidth="414.0" text="Tên" />
-          <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="395.0" text="Tuổi" />
+          <TableColumn fx:id="nameColumn" prefWidth="113.0" text="Tên" />
+          <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="62.0" text="Tuổi" />
+            <TableColumn fx:id="heightColumn" prefWidth="88.0" text="Chiều cao" />
+            <TableColumn fx:id="weightColumn" prefWidth="88.0" text="Cân nặng" />
+            <TableColumn fx:id="chestSizeColumn" prefWidth="116.0" text="Vòng 1" />
+            <TableColumn fx:id="waistColumn" minWidth="0.0" prefWidth="110.0" text="Vòng 2" />
+            <TableColumn fx:id="buttocksColumn" minWidth="0.0" prefWidth="129.0" text="Vòng 3" />
+            <TableColumn fx:id="priceColumn" prefWidth="103.0" text="Giá" />
         </columns>
       </TableView>
       <MenuButton layoutX="348.0" layoutY="14.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="115.0" text="Đặt Ngay">
         <items>
+            <MenuItem mnemonicParsing="false" onAction="#addAll" text="Tất cả" />
           <MenuItem mnemonicParsing="false" onAction="#addPhoThong" text="Phổ thông" />
           <MenuItem mnemonicParsing="false" onAction="#addSinhVienLoai1" text="Sinh viên loại 1" />
             <MenuItem mnemonicParsing="false" onAction="#addSinhVienLoai2" text="Sinh viên loại 2" />
             <MenuItem mnemonicParsing="false" onAction="#addCap3" text="Cấp 3" />
         </items>
       </MenuButton>
-      <Button layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#printf" prefHeight="53.0" prefWidth="102.0" text="Cập nhật" />
+      <Button layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#upDate" prefHeight="53.0" prefWidth="102.0" text="Cập nhật" />
       <Button layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#clearTableView" prefHeight="53.0" prefWidth="102.0" text="Dọn dẹp" />
+      <Button layoutX="565.0" layoutY="14.0" mnemonicParsing="false" onAction="#showInfo" prefHeight="53.0" prefWidth="102.0" text="show info" />
    </children>
 </AnchorPane>

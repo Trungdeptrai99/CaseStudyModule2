@@ -17,8 +17,11 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-            primaryStage.setTitle("Hello World");
-            primaryStage.setScene(new Scene(root));
+            primaryStage.setTitle("Cộng Đồng Checker Việt");
+            Scene scene= new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.setX(0);
+            primaryStage.setY(200);
             primaryStage.show();
         }catch (Exception e){
             System.err.println(e.getMessage());

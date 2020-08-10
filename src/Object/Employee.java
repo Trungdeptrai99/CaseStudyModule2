@@ -10,7 +10,19 @@ public class Employee implements Serializable {
     private int age,height,weight,chestSize,waist,buttocks;
 
     private String Img;
+    private String price;
 
+    public Employee(String name, int age, int height, int weight, int chestSize, int waist, int buttocks, String img,String price) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.chestSize = chestSize;
+        this.waist = waist;
+        this.buttocks = buttocks;
+        this.Img = img;
+        this.price = price;
+    }
     public Employee(String name, int age, int height, int weight, int chestSize, int waist, int buttocks, String img) {
         this.name = name;
         this.age = age;
@@ -19,12 +31,20 @@ public class Employee implements Serializable {
         this.chestSize = chestSize;
         this.waist = waist;
         this.buttocks = buttocks;
-        Img = img;
+        this.Img = img;
     }
 
     public Employee(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public Employee(){

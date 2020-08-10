@@ -2,9 +2,16 @@ package Object;
 
 public class SinhVienLoai1 extends Employee{
 
+    public  String price = "1000k/slot";
+
+    public SinhVienLoai1(String name, int age, int height, int weight, int chestSize, int waist, int buttocks, String img,String price) {
+        super(name, age, height, weight, chestSize, waist, buttocks, img,price);
+    }
+
     public SinhVienLoai1(String name, int age, int height, int weight, int chestSize, int waist, int buttocks, String img) {
         super(name, age, height, weight, chestSize, waist, buttocks, img);
     }
+
 
     public SinhVienLoai1(){
     }
